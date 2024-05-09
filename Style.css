@@ -1,0 +1,116 @@
+/* Style the navbar */
+#navbar {
+overflow: hidden;
+width: 100%;
+background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+}
+
+/*HATTER*/
+body{
+  background: rgb(27, 27,27);
+}
+
+
+.headerback {
+  animation: backgroundSlideshow 15s infinite; /* A háttérképek közötti váltakozás animációja */
+  height: 300px; /* Állítsd be a div magasságát, hogy látható legyen a háttérkép */
+  width: 100%; /* 100%-os szélesség */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes backgroundSlideshow {
+  0% { background-image: url('topkep.png'); }
+  33.33% { background-image: url('topkep2.png'); }
+  66.66% { background-image: url('topkep3.png'); }
+  100% { background-image: url('topkep4.png'); }
+}
+
+
+
+
+/*SEARCH*/
+.search {
+  --padding: 14px;
+  width: 100%; /* A tartalom szélessége a rendelkezésre álló terület 100%-a */
+  max-width: 600px; /* Maximum szélesség beállítása */
+  margin: 0 auto; /* A tartalom középre igazítása */
+  padding: var(--padding);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: #f6f6f6;
+  transition: box-shadow 0.25s;
+  display: flex;
+  justify-content: center; /* A tartalom vízszintes középre igazítása */
+}
+
+
+.search:focus-within{
+ box-shadow: 0 0 02px rgba(0,0,0,0.75);
+
+}
+
+.search-input {
+  font-size: 16px;
+  font-family: 'Lexend', sans-serif;
+  color: #333333;
+  margin-left: var(--padding);
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 100%; /* A tartalom szélessége a rendelkezésre álló terület 100%-a */
+}
+
+.search-input::placeholder,
+.search-icon{
+
+  color: rgba(0,0,0,0.5);
+}
+
+.search-input.material-symbols-outlined {
+  width: 24px; /* Keresőmező szélessége */
+  font-size: 24px; /* Betűméret */
+}
+
+
+
+
+
+/*BUTTON*/
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 20px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+  margin: 0 auto; /* Középre igazítás */
+  cursor: pointer;
+  margin-bottom: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+
+.btn:hover, .btn:focus, .btn:active
+{
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+

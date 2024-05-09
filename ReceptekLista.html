@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>ReceptekLista</title>
+    <link rel="stylesheet" href="StyleLista.css">
+    <script type="text/javascript" src="scriptleiras.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <img src="topkep.png" alt="Cimkep" width="100%">
+
+    <div id="navbar">
+        <a href="Receptek.html"> Kezdőlap</a>
+        <a href="ReceptekKapcsolat.html">Kapcsolat</a>
+        <a href="ReceptekLista.html">Bevásárló Lista</a>
+     </div>
+
+     
+     <h1>Bevásárló lista</h1>
+     <div id="app">
+       <form v-on:submit.prevent="addItem">
+         <p>
+           Mire lenne szükség?
+           <input type="text" required placeholder="Termek megnevezese..." v-model="itemName">
+         </p>
+         <p>
+           Mennyi?
+           <input type="number" placeholder="Mennyiseg..." v-model="itemNumber">
+         </p>
+         <button type="submit">Hozzáadás</button>
+       </form>
+     
+       <div>
+         <p>Bevásárló lista:</p>
+         <ul>
+           <li v-for="(item, index) in shoppingList" :key="index">
+             {{ item.name }}, {{ item.number}}
+             <button @click="removeItem(index)">Törlés</button>
+           </li>
+         </ul>
+       </div>
+       <button @click="saveListAsImage">Mentés</button>
+     </div>
+     <div class="space"></div>
+     
+     
+     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+     <script>
+       const app = Vue.createApp({
+         data() {
+           return {
+             itemName: null,
+             itemNumber: null,
+             shoppingList: [
+               { name: 'Krumpli', number:1  }
+             ]
+           }
+         },
+         methods: {
+           addItem(){
+             let item = {
+               name: this.itemName,
+               number: this.itemNumber
+             }
+             this.shoppingList.push(item)
+             this.itemName = null
+             this.itemNumber = null  
+           },
+           removeItem(index){
+             this.shoppingList.splice(index, 1);
+           },
+           saveListAsImage() {
+            const listText = this.shoppingList.map(item => `${item.name}: ${item.number}`).join('\n');
+           const canvas = document.createElement('canvas');
+          const context = canvas.getContext('2d');
+    
+          // Állítsd be a canvas méreteit, pl. a listText hosszához és szélességéhez igazítva
+    const textMetrics = context.measureText(listText);
+    canvas.width = textMetrics.width + 100; // plussz 20 pixel margó mindkét oldalon
+    canvas.height = this.shoppingList.length * 20 + 100; // a termékek számától függően
+    
+    // Állítsd be a canvas hátterét fehérre
+    context.fillStyle = 'white';
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Állítsd be a szöveg formázását és rajzold ki a termékeket
+    context.font = '25px Arial';
+    context.fillStyle = 'black';
+    this.shoppingList.forEach((item, index) => {
+        context.fillText(`${item.name}: ${item.number}`, 10, (index + 1) * 20); // Minden termék egy új sorban
+    });
+
+    // A kép mentése ugyanaz marad
+    const img = canvas.toDataURL('image/png');
+    const link = document.createElement('a');
+    link.href = img;
+    link.download = 'shopping_list.png';
+    link.click();
+      }
+         }
+       })
+      app.mount('#app')
+     </script>
+     
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* KARTYAK*/
+.container {
+    display: flex;
+    justify-content: center; /* A tartalom középre igazítása */
+    flex-wrap: wrap; /* Flexbox elemeinek több sorba rendezése */
+    max-width: 1200px; /* Maximális szélesség a .container-nek */
+    margin: 0 auto; /* Középre igazítás */
+  }
+  
+  .card
+  {
+    background: white;
+    width: 270px;
+    margin: 35px;
+    border-radius: 15px 15px 0 0 ;
+  
+  }
+  
+  .card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+  
+  }
+  
+  .car-1
+  {
+    background-image: url('recipe1.jpg');
+  }
+  .car-2
+  {
+    background-image: url('recipe1.jpg');
+  }
+  
+  .car-3
+  {
+    background-image: url('recipe1.jpg');
+  }
+  .card p{
+    padding: 15px;
+  }
+  .card h2{
+   padding: 15px;
+  }
+  
+  .card a{
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+  }
+  
+  .card:hover
+  {
+    background-color: rgb(64, 64, 64);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+
+
+  /* Style the navbar */
+#navbar {
+    overflow: hidden;
+    width: 100%;
+    background-color: #333;
+    }
+    
+    /* Navbar links */
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    }
+    
+    /*HATTER*/
+    body{
+      background: rgb(27, 27,27);
+    }
+    
+
+
+    .h1 {
+        font-family: 'Lexend', sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+      }
+      @media only screen and (max-width: 600px) {
+        .h1 {
+            font-size: 40px; /* A méret kisebb lesz, ha a képernyő szélessége 600px vagy annál kisebb */
+        }
+      }
+      

@@ -1,0 +1,76 @@
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    width: 100%;
+    background-color: #333;
+    }
+    
+    /* Navbar links */
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    }
+
+    /*HATTER*/
+body{
+    background: rgb(27, 27,27);
+  }
+
+.container {
+    display: flex;
+    align-items: center; /* A tartalmakat a tengely mentén középre igazítja */
+    flex-direction: row;
+}
+
+.leiras {
+    flex: 1; /* A leírás mező kitölti az elérhető hely 1 részét */
+    color: white;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1
+{
+    text-align: center; /* középre igazítás */
+}
+h3
+{
+    text-align: center;
+}
+ul{
+    text-align: left;
+    padding: 40px;
+    font-size: 32px;
+}
+h2{
+    text-align: left;
+    margin-left: 20px;
+}
+p{
+    text-align: left;
+    padding: 20px;
+}
+.kepek {
+    flex: 1; /* A kép kitölti az elérhető hely 1 részét */
+    text-align: right; /* A kép jobb oldalra igazítása */
+    padding: 40px;
+}
+
+.kepek img {
+    max-width: 100%; /* A kép maximális szélessége 100%-ra van állítva */
+    height: auto; /* Az arányok megőrzése, hogy a kép ne torzuljon */
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leiras, .kepek {
+        flex: auto;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>ReceptekKapcsolat</title>
+    <link rel="stylesheet" href="StyleKapcs.css">
+</head>
+
+<body>
+    <img src="topkep.png" alt="Cimkep" width="100%">
+
+<div id="navbar">
+    <a href="Receptek.html"> Kezdőlap</a>
+    <a href="ReceptekKapcsolat.html">Kapcsolat</a>
+    <a href="ReceptekLista.html">Bevásárló Lista</a>
+ </div>
+
+    <section>
+        <div class="container">
+          <form action="https://formspree.io/f/xdoqpaoq"  method="POST" id="my-form">
+      
+            <div class="form-group">
+              <label for="firstName"> Vezetéknév</label>
+              <input type="text" id="firstName" name="firstName">
+            </div>
+      
+            <div class="form-group">
+              <label for="latsName">Keresztnév</label>
+              <input type="text" id="lastName" name="lastName">
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+      
+            <div class="form-group">
+              <label for="massage">Üzenet</label>
+              <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+            </div>
+      
+            <button type="submit">Küldés</button>
+          </form>
+        </div>
+        <div id="status"></div>
+      </section>
+
+   
+</body>
+</html>
+  

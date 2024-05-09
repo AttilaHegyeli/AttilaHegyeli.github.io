@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Receptek</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const searchInput = document.querySelector('.search-input[type="search"]');
+          searchInput.addEventListener('input', function() {
+            /*FOOLDAL*/
+              const searchText = this.value.trim();
+              if (searchText === 'LEVESEK' || searchText==='Levesek') {
+                  window.location.href = 'ReceptekLevesek.html';
+              }
+              if (searchText === 'FOETELEK' || searchText==='Foetelek') {
+                  window.location.href = 'ReceptekFoetelek.html';
+              }
+              if (searchText === 'ELOETELEK' || searchText==='Eloetelek') {
+                  window.location.href = 'ReceptekEloetelek.html';
+              }
+              if (searchText === 'DESSZERTEK' || searchText==='Desszertek') {
+                  window.location.href = 'ReceptekDesszertek.html';
+              }
+              if (searchText === 'Kapcsolat') {
+                  window.location.href = 'ReceptekKapcsolat.html';
+              }
+              if (searchText === 'Bevasarlo lista') {
+                  window.location.href = 'ReceptekLista.html';
+              }
+
+              /*LEVESEK*/
+              if (searchText === 'Zoldsegleves') {
+                  window.location.href = 'ReceptekLevesek001.html';
+              }
+              if (searchText === 'Húsleves') {
+                  window.location.href = 'ReceptekLevesek002.html';
+              }
+              if (searchText === 'Paradicsomleves') {
+                  window.location.href = 'ReceptekLevesek003.html';
+              }
+              if (searchText === 'Gombaragu leves') {
+                  window.location.href = 'ReceptekLevesek004.html';
+              }
+              if (searchText === 'Spárgakrémleves') {
+                  window.location.href = 'ReceptekLevesek005.html';
+              }
+              if (searchText === 'Karalábé leves') {
+                  window.location.href = 'ReceptekLevesek006.html';
+              }
+              if (searchText === 'Gulyásleves') {
+                  window.location.href = 'ReceptekLevesek007.html';
+              }
+              if (searchText === 'Curry leves') {
+                  window.location.href = 'ReceptekLevesek008.html';
+              }
+              if (searchText === 'Salátaleves') {
+                  window.location.href = 'ReceptekLevesek009.html';
+              }
+              /*FOETELEK*/
+              if (searchText === 'Spenótos paradicsomos penne') {
+                  window.location.href = 'ReceptekFoetelek001.html';
+              }
+              if (searchText === 'Grillezett csirkemell salátával') {
+                  window.location.href = 'ReceptekFoetelek002.html';
+              }
+              if (searchText === 'Zöldséges csirkeragu rizzsel') {
+                  window.location.href = 'ReceptekFoetelek003.html';
+              }
+              if (searchText === 'Rakott padlizsán') {
+                  window.location.href = 'ReceptekFoetelek004.html';
+              }
+              if (searchText === 'Spagetti carbonara') {
+                  window.location.href = 'ReceptekFoetelek005.html';
+              }
+              if (searchText === 'Bolognai spagetti') {
+                  window.location.href = 'ReceptekFoetelek006.html';
+              }
+              if (searchText === 'Rakott krumpli') {
+                  window.location.href = 'ReceptekFoetelek007.html';
+              }
+              if (searchText === 'Vadasmártás') {
+                  window.location.href = 'ReceptekFoetelek008.html';
+              }
+              if (searchText === 'Csirkés zöldséges curry') {
+                  window.location.href = 'ReceptekFoetelek009.html';
+              }
+              /*ELOETELEK*/
+              if (searchText === 'Padlizsánkrém') {
+                  window.location.href = 'ReceptekEloetelek001.html';
+              }
+              if (searchText === 'Töltött tojás') {
+                  window.location.href = 'ReceptekEloetelek002.html';
+              }
+              if (searchText === 'Majonézes krumplisaláta') {
+                  window.location.href = 'ReceptekEloetelek003.html';
+              }
+              if (searchText === 'Tonhalsaláta') {
+                  window.location.href = 'ReceptekEloetelek004.html';
+              }
+              if (searchText === 'Caprese saláta') {
+                  window.location.href = 'ReceptekEloetelek005.html';
+              }
+              if (searchText === 'Görög saláta') {
+                  window.location.href = 'ReceptekEloetelek006.html';
+              }
+              if (searchText === 'Bruschetta') {
+                  window.location.href = 'ReceptekEloetelek007.html';
+              }
+              if (searchText === 'Avokádókrém') {
+                  window.location.href = 'ReceptekEloetelek008.html';
+              }
+              if (searchText === 'Cukkini roládok ricottával és paradicsommal') {
+                  window.location.href = 'ReceptekEloetelek009.html';
+              }
+              /*DESSZERTEK*/
+              if (searchText === 'Csokoládés banánkenyér') {
+                  window.location.href = 'ReceptekDesszertek001.html';
+              }
+              if (searchText === 'Almás pite') {
+                  window.location.href = 'ReceptekDesszertek002.html';
+              }
+              if (searchText === 'Krémes tészta') {
+                  window.location.href = 'ReceptekDesszertek003.html';
+              }
+              if (searchText === 'Zserbó') {
+                  window.location.href = 'ReceptekDesszertek004.html';
+              }
+              if (searchText === 'Madártej') {
+                  window.location.href = 'ReceptekDesszertek005.html';
+              }
+              if (searchText === 'Madártej szelet') {
+                  window.location.href = 'ReceptekDesszertek006.html';
+              }
+              if (searchText === 'Makostészta') {
+                  window.location.href = 'ReceptekDesszertek007.html';
+              }
+              if (searchText === 'Málnástészta') {
+                  window.location.href = 'ReceptekDesszertek008.html';
+              }
+              if (searchText === 'Mákos kalács') {
+                  window.location.href = 'ReceptekDesszertek009.html';
+              }
+          
+          });
+      });
+      </script>
+</head>
+<body>
+
+
+    <div class="headerback"></div>
+
+    <div id="navbar">
+        <a href="Receptek.html"> Kezdőlap</a>
+        <a href="ReceptekKapcsolat.html">Kapcsolat</a>
+        <a href="ReceptekLista.html">Bevásárló Lista</a>
+     </div>
+    
+      <form>
+      <div class="search">
+        <span class="search-input material-symbols-outlined">search</span>
+        <input  class="search-input" type="search" placeholder="Search">
+      </div>
+    </form>
+
+
+    
+            
+           <img src="Levesek.png" alt="Levesek" width="100%">
+           <a href="ReceptekLevesek.html" class="btn">LEVESEK</a>
+
+           <img src="Foetelek.png" alt="Levesek" width="100%">
+           <a href="ReceptekFoetelek.html" class="btn">FŐÉTELEK</a>
+
+           <img src="Eloetelek.png" alt="Levesek" width="100%">
+           <a href="ReceptekEloetelek.html" class="btn">ELŐÉTELEK</a>
+
+           <img src="Desszertek.png" alt="Levesek" width="100%">
+           <a href="ReceptekDesszertek.html" class="btn">DESSZERTEK</a>
+
+      
+
+</body>
+</html>

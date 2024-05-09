@@ -1,0 +1,265 @@
+/* KARTYAK*/
+.container {
+    display: flex;
+    justify-content: center; /* A tartalom középre igazítása */
+    flex-wrap: wrap; /* Flexbox elemeinek több sorba rendezése */
+    max-width: 1200px; /* Maximális szélesség a .container-nek */
+    margin: 0 auto; /* Középre igazítás */
+  }
+  
+  .card
+  {
+    background: white;
+    width: 270px;
+    margin: 35px;
+    border-radius: 15px 15px 0 0 ;
+    height: 490px;
+    position: relative;
+    margin-bottom: 20px;
+  
+  }
+  
+  .card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+  
+  }
+  
+  /*LEVESEK 0-al kezdodnek*/
+  .car-0001
+  {
+    background-image: url('ReceptekLevesek001.png');
+  }
+  .car-0002
+  {
+    background-image: url('ReceptekLevesek002.png');
+  }
+  
+  .car-0003
+  {
+    background-image: url('ReceptekLevesek003.png');
+  }
+
+  .car-0004
+  {
+    background-image: url('ReceptekLevesek004.png');
+  }
+  .car-0005
+  {
+    background-image: url('ReceptekLevesek005.png');
+  }
+  .car-0006
+  {
+    background-image: url('ReceptekLevesek006.png');
+  }
+  .car-0007
+  {
+    background-image: url('ReceptekLevesek007.png');
+  }
+  .car-0008
+  {
+    background-image: url('ReceptekLevesek008.png');
+  }
+  .car-0009
+  {
+    background-image: url('ReceptekLevesek009.png');
+  }
+
+  /*FOETELEK 1-es szammal kezdodnek*/
+  
+  .car-1001
+  {
+    background-image: url('ReceptekFoetelek001.png');
+  }
+  .car-1002
+  {
+    background-image: url('ReceptekFoetelek002.png');
+  }
+
+  .car-1003
+  {
+    background-image: url('ReceptekFoetelek003.png');
+  }
+
+  .car-1004
+  {
+    background-image: url('ReceptekFoetelek004.png');
+  }
+
+  .car-1005
+  {
+    background-image: url('ReceptekFoetelek005.png');
+  }
+
+  .car-1006
+  {
+    background-image: url('ReceptekFoetelek006.png');
+  }
+
+  .car-1007
+  {
+    background-image: url('ReceptekFoetelek007.png');
+  }
+
+  .car-1008
+  {
+    background-image: url('ReceptekFoetelek008.png');
+  }
+  .car-1009
+  {
+    background-image: url('ReceptekFoetelek009.png');
+  }
+  /*ELOETEL A 2-ES JELZESO */
+  .car-2001
+  {
+    background-image: url('ReceptekEloetelek001.png');
+  }
+  .car-2002
+  {
+    background-image: url('ReceptekEloetelek002.png');
+  }
+  .car-2003
+  {
+    background-image: url('ReceptekEloetelek003.png');
+  }
+  .car-2004
+  {
+    background-image: url('ReceptekEloetelek004.png');
+  }
+  .car-2005
+  {
+    background-image: url('ReceptekEloetelek005.png');
+  }
+  .car-2006
+  {
+    background-image: url('ReceptekEloetelek006.png');
+  }
+
+  .car-2007
+  {
+    background-image: url('ReceptekEloetelek007.png');
+  }
+  .car-2008
+  {
+    background-image: url('ReceptekEloetelek008.png');
+  }
+  .car-2009
+  {
+    background-image: url('ReceptekEloetelek009.png');
+  }
+
+
+/*DESSZERTEK 3-as JELZESO*/
+.car-3001
+  {
+    background-image: url('ReceptekDesszertek001.png');
+  }
+  .car-3002
+  {
+    background-image: url('ReceptekDesszertek002.png');
+  }
+  .car-3003
+  {
+    background-image: url('ReceptekDesszertek003.png');
+  }
+  .car-3004
+  {
+    background-image: url('ReceptekDesszertek004.png');
+  }
+  .car-3005
+  {
+    background-image: url('ReceptekDesszertek005.png');
+  }
+  .car-3006
+  {
+    background-image: url('ReceptekDesszertek006.png');
+  }
+  .car-3007
+  {
+    background-image: url('ReceptekDesszertek007.png');
+  }
+  .car-3008
+  {
+    background-image: url('ReceptekDesszertek008.png');
+  }
+  .car-3009
+  {
+    background-image: url('ReceptekDesszertek009.png');
+  }
+
+
+
+
+
+
+  .card p{
+    padding: 15px;
+  }
+  .card h2{
+   padding: 15px;
+  }
+  
+  .card a {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: block;
+    text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px; /* A kívánt távolság az alsó margótól */
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: calc(100% - 40px); /* A szélesség kiszámítása a paddingok levonásával */
+}
+  
+  .card:hover
+  {
+    background-color: rgb(64, 64, 64);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+
+
+  /* Style the navbar */
+#navbar {
+    overflow: hidden;
+    width: 100%;
+    background-color: #333;
+    }
+    
+    /* Navbar links */
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    }
+    
+    /*HATTER*/
+    body{
+      background: rgb(27, 27,27);
+    }
+    
+
+
+    .h1 {
+        font-family: 'Lexend', sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+      }
+      @media only screen and (max-width: 600px) {
+        .h1 {
+            font-size: 40px; /* A méret kisebb lesz, ha a képernyő szélessége 600px vagy annál kisebb */
+        }
+      }
+      
